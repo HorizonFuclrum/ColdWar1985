@@ -1,0 +1,243 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet
+
+# Border Skirmish with the Japanese
+country_event = {
+
+}
+
+# Successful Raid
+country_event = {
+
+}
+
+# Failed Raid
+country_event = {
+
+}
+
+# Romania surrenders Bessarabia
+country_event = {
+
+}
+
+# Romania refuses to surrender Bessarabia
+country_event = {
+
+}
+
+# Estonia Surrenders
+country_event = {
+	
+}
+
+# Estonia Refuses
+country_event = {
+
+}
+
+# Latvia Surrenders
+country_event = {
+
+}
+
+# Latvia Refuses
+country_event = {
+
+}
+
+# Lithuania Surrenders
+country_event = {
+
+}
+
+# Lithuania Refuses
+country_event = {
+
+}
+
+country_event = {
+	
+}
+
+# 
+
+}
+
+#
+country_event = {
+	
+}
+
+#
+country_event = {
+
+}
+
+#
+country_event = {
+
+}
+
+#
+country_event = {
+
+}
+
+#
+country_event = {
+
+}
+
+#
+country_event = {
+
+}
+
+# 
+country_event = {
+
+}
+
+# 
+country_event = {
+	
+}
+
+#
+country_event = {
+
+}
+
+# 
+country_event = {
+
+}
+
+# 
+country_event = {
+	
+}
+
+# 
+country_event = {
+
+}
+
+# 
+country_event = {
+
+}
+
+
+
+# France national focus -  requests to join commitern
+country_event = {
+	
+}
+
+# comintern_influence removed due to war with common enemy
+country_event = {
+	
+}
+
+# Demand Bessarabia
+country_event = {
+	
+}
+
+# Demand Karjala
+country_event = {
+	
+}
+
+# Oppress Estonia
+country_event = {
+	
+}
+
+# Oppress Latvia
+country_event = {
+
+}
+
+# Oppress Lithuania 
+
+}
+
+# Communist government in FROM baltic country and they wish to be annexed
+country_event = {
+	
+}
+
+# Communist government in FROM baltic country and they wish to be part puppet
+country_event = {
+	
+}
+
+# Purge - Fighting defensive war against major
+country_event = {
+	
+}
+
+# Purge - Special event to remove patriotic war if it has been added
+country_event = {
+	
+}
+
+#No purges completed - decide what to do
+country_event = {
+	
+}
+
+#No purges massive civil war
+country_event = {
+	
+}
+
+#1/4 purges
+country_event = {
+	
+}
+
+#2/4 purges
+country_event = {
+	
+}
+
+#3/4 purges
+country_event = {
+	
+
+}
+
+#4/4 purges
+country_event = {
+	
+}
+
+
+#New Leadership in Russia
+country_event = {
+
+}
+
+
+# Poland conquered... honor MR Pact?
+country_event = {
+	
+}
+
+# Soviet honors MR Pact (Germany)
+country_event = {
+	
+}
+
+# Soviet betrays MR Pact (Germany)
+country_event = {
+	
+}
+

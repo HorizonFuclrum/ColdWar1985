@@ -1,0 +1,16 @@
+add_namespace = coldwar1985
+
+##Event: Games of the XXII Olympiad
+news_event = {
+ id = coldwar1985.1
+ title = coldwar1985.1.title
+ desc = coldwar1985.1.desc
+ picture = GFX_report_event_royal_parade
+ is_triggered_only = yes
+ fire_only_once = yes
+ major = yes
+ trigger = {
+date > 1980.3.8
+	}	mean_time_to_happen = { days = 1}
+}
+
