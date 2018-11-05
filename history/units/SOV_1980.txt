@@ -1,0 +1,300 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
+	division_names_group = SOV_MOT_01
+											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns)
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		modern_armor = { x = 1 y = 0 }
+		modern_sp_artillery_brigade = { x = 1 y = 1}
+		modern_sp_anti_air_brigade = { x = 1 y = 2}
+
+
+	}
+	support = {
+
+	}
+}
+
+
+division_template = {
+	name = "Tankovaya Diviziya" 				# Represents regular mechanized corps (4 existed in 1935-38);
+	division_names_group = SOV_MEC_01
+												# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge
+
+	regiments = {
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 0 }
+
+	}
+}
+division_template = {
+	name = "Vozdushno-Desantnaya Brigada"			# Airborne Brigade
+	division_names_group = SOV_PAR_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+	}
+}
+
+### Note: OOB abstracts away the following:
+#	Marine Brigade (3x marine bn), 2 Brigades: Leningrad, Sevastopol
+#	Airborne Brigade (3x paratrooper bn), 1 Brigade: Moscow
+
+
+##### OOB #####
+
+units = {
+	##### NAVAL UNITS #####
+	### Northern Fleet -- Murmansk
+	navy = {
+		name = "Severnyy Podvodniy Flot"
+		base = 3134
+		location = 3134 # Murmansk
+		# 5iy Podvodniy Flot
+		ship = { name = "B-94" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-95" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-133" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-36" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-116" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-143" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-130" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-57" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-85" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-139" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-153" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-4" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-156" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-59" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-164" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-105" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-33" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-7" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-30" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-97" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-146" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-215" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-225" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-290" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-303" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-312" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-319" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-380 Gorkovsky Komsomolets" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-386" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-443" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-474" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-498" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+
+
+	}
+
+	### Baltic Fleet -- Leningrad
+	navy = {
+		name = "Baltiyskiy Podvodniy Flot"
+		base = 3151
+		location = 3151 # Leningrad
+		ship = { name = "B-169" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-38" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-50" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-53" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-8" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-31" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-98" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-6" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-15" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-107" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-112" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-109" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+
+
+	}
+
+	### Black Sea Fleet -- Sevastopol
+	navy = {
+		name = "Chernomorskiy Podvodniy Flot"
+		base = 3686
+		location = 3686 # Sevastopopl
+		# 9iy Podvodniy Flot
+		ship = { name = "B-25" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-21" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-26" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-34" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-28" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-40" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-41" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-49" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-46" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-29" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-397" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-504" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-515" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-519" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-546" definition = submarine equipment = { submarine_3 = { amount = 1 owner = SOV } } }
+	}
+
+	### Pacific Fleet -- Vladivostok
+	navy = {
+		name = "Tihookyeanskiy Podvodniy Flot"
+		base = 957
+		location = 957 # Vladivostok
+		# 10iy Podvodniy Flot
+		ship = { name = "B-39" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-400" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-416" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-413" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-213" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-205" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-440" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-409" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-435" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+		ship = { name = "B-427" definition = submarine equipment = { submarine_2 = { amount = 1 owner = SOV } } }
+	}
+}
+
+### Air Wings
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	195 = {
+		# 15ya Istrebitel'nye Aviabrigada
+		fighter_equipment_0 = {
+			owner = "SOV"
+			amount = 94
+		}
+		# 18ya Bombardirovochnye Aviabrigada
+		tac_bomber_equipment_0 =  {
+			owner = "SOV"
+			amount = 60
+		}
+	}
+
+	# MVO Aviatsya Komandovaniya
+	219 = {
+		# 2ya Istrebitel'nye Aviabrigada
+		fighter_equipment_0 = {
+			owner = "SOV"
+			amount = 94
+		}
+		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
+		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
+		strat_bomber_equipment_1 =  {
+			owner = "SOV"
+			amount = 48
+		}
+		# TODO -- 46ya Transporta Aviabrigada -- transport planes
+	}
+
+	# BOVO Aviatsya Komandovaniya -- Minsk
+	206 = {
+		# 8ya Istrebitel'nye Aviabrigada
+		fighter_equipment_1 = {
+			owner = "SOV"
+			amount = 94
+		}
+		# 14ya Istrebitel'nye Aviabrigada
+		fighter_equipment_0 = {
+			owner = "SOV"
+			amount = 94
+		}
+		# 16ya Bombardirovochnye Aviabrigada
+		tac_bomber_equipment_0 =  {
+			owner = "SOV"
+			amount = 60
+		}
+	}
+
+	# KOVO Aviatsya Komandovaniya -- Kiev
+	202 = {
+		# 17ya Istrebitel'nye Aviabrigada
+		fighter_equipment_1 = {
+			owner = "SOV"
+			amount = 94
+		}
+		# 1ya Bombardirovochnye Aviabrigada
+		# 10ya Bombardirovochnye Aviabrigada
+		tac_bomber_equipment_0 =  {
+			owner = "SOV"
+			amount = 120
+		}
+	}
+
+	# Dal'nevostochniy Aviatsya Komandovaniya -- Vladivostock
+	408 = {
+		# 12ya Istrebitel'nye Aviabrigada
+		# 20ya Istrebitel'nye Aviabrigada
+		fighter_equipment_0 = {
+			owner = "SOV"
+			amount = 188
+		}
+		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
+		strat_bomber_equipment_1 =  {
+			owner = "SOV"
+			amount = 24
+		}
+	}
+
+	# VVS - KBF Aviatsya Komandovaniya -- Leningrad
+	195 = {
+		# 8ya VMF Aviabrigada
+		nav_bomber_equipment_1 = {
+			owner = "SOV"
+			amount = 54
+		}
+	}
+	# VVS - BSF Aviatsya Komandovaniya -- Sevastopol
+	137 = {
+		# 4ya VMF Aviabrigada
+		nav_bomber_equipment_1 = {
+			owner = "SOV"
+			amount = 54
+		}
+	}
+}
+
+
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 7
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	### Ships Under Construction Notes ###
+
+	add_equipment_production = {
+		equipment = {
+			type = submarine_4
+			creator = "SOV"
+		}
+		requested_factories = 1
+		progress = 0.0
+		amount = 2
+	}
+
+}
+	#####################
