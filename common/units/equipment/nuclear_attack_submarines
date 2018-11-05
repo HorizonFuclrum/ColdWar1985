@@ -1,0 +1,69 @@
+equipments = {
+
+	nuclear_attack_submarine = {
+		year = 1950
+
+		is_archetype = yes
+		is_buildable = no
+		type = submarine
+		group_by = archetype
+
+		upgrades = {
+			ship_reliability_upgrade
+			sub_engine_upgrade
+			sub_stealth_upgrade
+			sub_torpedo_upgrade
+		}
+
+		interface_category = interface_category_other_ships
+
+		ap_attack = 0
+		attack = 0 # Their main weapon is torpedo_attack.
+		fire_range = 10
+		torpedo_attack = 20
+		shore_bombardment = 0
+
+		anti_air_attack = 0
+
+		armor_value = 0
+		evasion = 25
+
+		surface_detection = 40
+		sub_detection = 10
+		surface_visibility = 1
+		sub_visibility = 10
+		naval_speed = 20
+		reliability = 0.60
+
+		naval_range = 2000
+
+		max_strength = 10
+
+		port_capacity_usage = 0.5
+
+		build_cost_ic = 600
+		resources = {
+			oil = 1
+			steel = 3
+		}
+
+		manpower = 150
+	}
+
+	nuclear_attack_submarine_1 = {
+		year = 1950
+
+		archetype = nuclear_attack_submarine
+		priority = 80
+
+		resources = {
+			oil = 1
+			steel = 3
+		}
+		type = {
+			submarine
+		}
+
+	}
+
+}

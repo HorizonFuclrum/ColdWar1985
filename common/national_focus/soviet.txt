@@ -1,0 +1,91 @@
+focus_tree = {
+	id = soviet_focus_1
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 50 y = 1100 }
+
+
+
+	focus = {
+			id = SOV_go_with_democracy
+			icon = GFX_goal_support_democracy
+			mutually_exclusive = { focus = SOV_support_the_communist_party }
+			x = 0
+			y = 1
+			cost = 10
+			ai_will_do = {
+				factor = 5
+			}
+
+			available_if_capitulated = yes
+
+			complete_tooltip = {
+
+				}
+
+
+			completion_reward = {
+			USA = {
+			if = {
+				limit = { NOT = { has_government = communism } }
+				add_opinion_modifier = { target = SOV modifier = anti_communist_focus }
+			}
+		}
+		ENG = {
+			if = {
+				limit = { NOT = { has_government = communism } }
+				add_opinion_modifier = { target = SOV modifier = anti_communist_focus }
+			}
+		}
+		FRA = {
+			if = {
+				limit = { NOT = { has_government = communism } }
+				add_opinion_modifier = { target = SOV modifier = anti_communist_focus }
+			}
+		}
+
+		every_other_country = {
+			limit = { has_government = democracy }
+			add_opinion_modifier = { target = SOV modifier = anti_communist_focus }
+		}
+
+		every_other_country = {
+			limit = { has_government = communism }
+				add_opinion_modifier = { target = SOV modifier = anti_communist_focus_communists }
+		}
+			}
+
+}
+
+focus = {
+		id = SOV_support_the_communist_party
+		icon = GFX_goal_support_communism
+		mutually_exclusive = { focus = SOV_go_with_democracy }
+		x = 15
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+
+
+
+
+
+		completion_reward = {
+
+		}
+
+}

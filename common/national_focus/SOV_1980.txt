@@ -1,0 +1,230 @@
+focus_tree = {
+id = soviet_focus
+country = {
+factor = 0
+modifier = {
+add = 10
+tag = SOV
+}
+}
+#Focus for Finish the 10th Five Year Plan
+focus = {
+id = SOV_finishthe10thfiveyearplan
+icon = GFX_goal_generic_construct_civ_factory
+x = 3
+y = 0
+cost = 10
+available_if_capitulated = yes
+ai_will_do = {
+ factor = 1
+ }
+completion_reward = {
+
+249 = {
+add_building_construction = {
+	type = industrial_complex
+	level = 3
+	instant_build = yes
+	}
+}
+
+add_resource = {
+	type = oil
+	amount = 5
+	state = 214
+	}
+
+add_resource = {
+	type = oil
+	amount = 5
+	state = 262
+	}
+ }
+}
+
+#Focus for 11th Five-Year Plan
+focus = {
+id = SOV_11thfiveyearplan
+icon = GFX_goal_generic_construct_civ_factory
+x = 3
+y = 1
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = SOV_finishthe10thfiveyearplan }
+ai_will_do = {
+ factor = 1
+ }
+
+
+}
+
+#Focus for Focus on Electronics
+focus = {
+id = SOV_focusonelectronics
+icon = GFX_focus_research2
+x = 2
+y = 2
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = SOV_11thfiveyearplan }
+ai_will_do = {
+ factor = 1
+ }
+completion_reward = {
+
+add_tech_bonus = {
+	bonus = 0.5
+	uses = 3
+	category = electronics
+	}
+
+add_tech_bonus = {
+	bonus = 0.5
+	uses = 1
+	category = radar_tech
+	}
+
+}
+
+
+ }
+
+#Focus for Focus on Industry
+focus = {
+id = SOV_focusonindustry
+icon = GFX_goal_generic_construct_civ_factory
+x = 4
+y = 2
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = SOV_11thfiveyearplan }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for 12th Five-Year Plan
+focus = {
+id = SOV_12thfiveyearplan
+icon = GFX_goal_generic_construct_civ_factory
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = SOV_focusonindustry focus = SOV_focusonelectronics }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Uskorenie
+focus = {
+id = SOV_uskorenie
+icon = GFX_goal_generic_neutrality_focus
+x = 5
+y = 4
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = SOV_12thfiveyearplan }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for The 26th Party Congress
+focus = {
+id = SOV_the26thpartycongress
+icon = GFX_focus_generic_soviet_politics
+x = 12
+y = 0
+cost = 10
+available_if_capitulated = yes
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+#Focus for Push the 11th Five-Year Plan
+focus = {
+id = SOV_pushthe11thfiveyearplan
+icon = GFX_goal_generic_soviet_construction
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes
+prerequisite = { focus = SOV_focusonelectronics focus = SOV_focusonindustry }
+mutually_exclusive = { focus = SOV_12thfiveyearplan }
+ai_will_do = {
+ factor = 1
+ }
+
+ }
+
+ #Focus for Combat the Zastoy
+ focus = {
+ id = SOV_combatthezastoy
+ icon = GFX_goal_generic_intelligence_exchange
+ x = 7
+ y = 4
+ cost = 15
+ available_if_capitulated = yes
+ prerequisite = { focus = SOV_pushthe11thfiveyearplan }
+ ai_will_do = {
+  factor = 1
+  }
+
+  }
+
+  #Focus for Advance Microprocessor Research
+  focus = {
+  id = SOV_advancemicroprocessorresearch
+  icon = GFX_goal_generic_scientific_exchange
+  x = 1
+  y = 3
+  cost = 10
+  available_if_capitulated = yes
+  prerequisite = { focus = SOV_focusonelectronics }
+  ai_will_do = {
+   factor = 1
+   }
+
+   }
+
+   #Focus for The Computer Boom
+   focus = {
+   id = SOV_thecomputerboom
+   icon = GFX_goal_tfv_generic_tech_sharing
+   x = 1
+   y = 4
+   cost = 10
+   available_if_capitulated = yes
+   prerequisite = { focus = SOV_advancemicroprocessorresearch }
+   ai_will_do = {
+    factor = 1
+    }
+
+    }
+
+    #Focus for The New Industrial Revolution
+    focus = {
+    id = SOV_thenewindustrialrevolution
+    icon = GFX_goal_generic_construct_civ_factory
+    x = 4
+    y = 4
+    cost = 10
+    available_if_capitulated = yes
+    prerequisite = { focus = SOV_focusonelectronics }
+    prerequisite = { focus = SOV_focusonindustry }
+    prerequisite = { focus = SOV_pushthe11thfiveyearplan }
+    ai_will_do = {
+     factor = 1
+     }
+
+     }
+
+#End of focuses
+ }
